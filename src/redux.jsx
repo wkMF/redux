@@ -75,6 +75,7 @@ export const connect = (selector, dispatchSelector) => (Component) => {
         update({})
       }
     }), [selector])
+    console.log(dispatchers,'dispatchers');
 
     return <Component {...props} {...data} {...dispatchers}/>
   }
